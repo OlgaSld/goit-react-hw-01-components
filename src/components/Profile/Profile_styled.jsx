@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
     width: 480px;
-    /* padding: 50px 20px; */
     margin: 50px auto;
     border: 5px solid;
     border-color: #e1dddd;
@@ -10,7 +9,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Description = styled.div`
-    text-align: center;
+  text-align: center;
 `;
 
 export const Avatar = styled.img`
@@ -59,6 +58,8 @@ export const ListItem = styled.li`
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
 
     &:not(:last-child) {
     border-right: 2px solid;
@@ -66,15 +67,14 @@ export const ListItem = styled.li`
 }
 `;
 
-export const Label = styled.li`
+export const Label = styled.span`
     font-size: 24px;
     font-weight: 500;
     color: darkgray;
     margin-bottom: 8px;
 `;
 
-export const StatsQty = styled.li`
+export const StatsQty = styled.span`
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 16px;
 `;

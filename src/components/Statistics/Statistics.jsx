@@ -28,9 +28,9 @@ export const Statistics = ({ stats  }) => {
 
 
 Statictics.propTypes = {
-  title: PropTypes.string,
   stats: PropTypes.shape({
     label: PropTypes.string.isRequired,
     percentage: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired
   }).isRequired,
-}.isRequired
+}

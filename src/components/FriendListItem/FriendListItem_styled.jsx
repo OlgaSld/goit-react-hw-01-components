@@ -17,7 +17,7 @@ export const Status = styled.span`
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: ${props => props.status ? "green" : "red"};
+    background: ${props => props.$status ? "green" : "red"};
 `
 
 export const Avatar = styled.img`

@@ -10,7 +10,7 @@ import {
 export const FriendListItem = ({ friend: { name, avatar, isOnline } }) => {
     return (
       <ListItem>
-            <Status $status={isOnline}>{isOnline}</Status>
+        <Status $status={isOnline}>{isOnline}</Status>
         <Avatar src={avatar} alt={name} width="48" />
         <UserName>{name}</UserName>
       </ListItem>
@@ -23,4 +23,4 @@ FriendListItem.propTypes = {
     isOnline: PropTypes.bool.isRequired,
     avatar: PropTypes.string.isRequired,
   }),
-}
+};

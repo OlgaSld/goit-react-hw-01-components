@@ -7,7 +7,7 @@ import {
 } from './FriendListItem_styled';
 
 
-export const FriendListItem = ({ friends: { name, avatar, isOnline } }) => {
+export const FriendListItem = ({ friend: { name, avatar, isOnline } }) => {
     return (
       <ListItem>
             <Status $status={isOnline}>{isOnline}</Status>

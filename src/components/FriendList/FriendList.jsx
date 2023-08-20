@@ -7,7 +7,7 @@ export const FriendList = ({ friends }) => {
     return (
       <List>
             {friends.map(friend => (
-                <FriendListItem key={friend.id} friends={friend} />
+                <FriendListItem key={friend.id} friend={friend} />
             ))}
       </List>
     );
@@ -15,7 +15,7 @@ export const FriendList = ({ friends }) => {
 
 
 FriendList.propTypes = {
-  friend: PropTypes.arrayOf({
+  friends: PropTypes.arrayOf({
     id: PropTypes.string.isRequired,
   })
 }
